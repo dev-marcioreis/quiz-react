@@ -23,6 +23,7 @@
   --white-color: hsl(0, 0%, 100%);
   --bg-color: linear-gradient(to bottom, hsl(211, 98%, 19%), hsl(206, 100%, 21%));
   --green-color: hsl(157, 56%, 32%); 
+  --orange-color: hsla(39, 100%, 50%, 0.541);
 
 }
 
@@ -32,4 +33,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
+

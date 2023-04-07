@@ -89,19 +89,24 @@
 /*==========Media Query small screens mobile==========*/
 @media (max-width: 768px) {
     .main {
-        width: 55%;
+        width: 60%;
     }
     .top {
-        height: 45%;
+        height: 36%;
+        top: -2rem;
     }
     .pyramid {
-        width: 45%;
+        width: 40%;
+    }
+    .moneyList {
+        padding: .5rem;
     }
     .moneyListItemNumber {
         width: 20%;
     }
     .moneyListItemAmount, .moneyListItemNumber {
         font-size: .7rem;
+        font-weight: 500;
     }
 
 }

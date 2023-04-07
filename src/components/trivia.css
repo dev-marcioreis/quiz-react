@@ -39,7 +39,7 @@
     background: var(--blue-color);
 }
 .answer.correct {
-    animation: correct 2s ease forwards;
+    animation: correct 3s ease forwards;
 }
 
 @keyframes correct {
@@ -47,7 +47,7 @@
         background: var(--blue-color);
     }
     20%, 40%, 60% {
-        background: var(--blue1-color);
+        background: var(--orange-color);
     }
     62%, 100% {
         background: var(--green-color);
