@@ -25,8 +25,5 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, hsla(211, 98%, 19%, 0.623), hsl(206, 100%, 21%)), url('./assets/bg.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to bottom, hsla(211, 98%, 19%, 0.623), hsl(206, 100%, 21%));
 }
