@@ -1,14 +1,33 @@
+import { useEffect, useState } from 'react'
 import './trivia.css'
 
-const Trivia = () => {
+  const Trivia = ( {data, setStop, questionNumber, setQuestionNumber} ) => {
+
+    const [question, setQuestion] = useState(null)
+    const [selectedAnswer, setSelectedAnswer] = useState(null)
+    const [className, setClassName] = useState('answer')
+
+    useEffect(() => {
+      setQuestion(data[questionNumber - 1])
+    }, [data, questionNumber])
+
+    const handleClick = (a) => {
+      setSelectedAnswer(a)
+      setClassName('answer active')
+      setStop(() => {
+        setClassName(a.correct ? 'answer correct' : 'answer wrong')
+      }, 3000)
+    }
+
   return (
     <div className='trivia'>
-        <div className="question">Qual o maior Youtuber do mundo?</div>
+        <div className="question">{question?.question}</div>
         <div className="answers">
-            <div className="answer">Winderson Nunes</div>
-            <div className="answer">Anitta</div>
-            <div className="answer">Nastia</div>
-            <div className="answer correct">MrBeast</div>
+          {
+            question?.answers.map(a => (
+              <div className={selectedAnswer === a ? className : 'answer'} onClick={() => handleClick(a)}>{a.name}</div>
+            ))
+          }
         </div>
     </div>
   )

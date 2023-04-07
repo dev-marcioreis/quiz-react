@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import './App.css'
 import Trivia from './components/Trivia';
+import data from './data'
 
 function App() {
 
   const [questionNumber, setQuestionNumber] = useState(1)
+  const [stop, setStop] = useState(false)
 
   const moneyPyramid = [
     {id: 1, amount: 'R$ 100,00'},
@@ -31,7 +33,7 @@ function App() {
           <div className="timer">30</div>
         </div>
         <div className="bottom">
-          <Trivia />
+          <Trivia data={data} setStop={setStop} questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
         </div>
       </div>
       <div className="pyramid">

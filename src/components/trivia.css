@@ -54,6 +54,22 @@
     }
 }
 
+.answer.wrong {
+    animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+    0%, 22%, 42% {
+        background: var(--blue-color);
+    }
+    20%, 40%, 60% {
+        background: var(--orange-color);
+    }
+    62%, 100% {
+        background: var(--red-color);
+    }
+}
+
 
 /*==========Media Query small screens==========*/
 @media (max-width: 1024px) {
