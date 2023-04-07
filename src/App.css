@@ -96,6 +96,9 @@
     .main {
         width: 55%;
     }
+    .top {
+        height: 45%;
+    }
     .pyramid {
         width: 45%;
     }
@@ -103,7 +106,7 @@
         width: 20%;
     }
     .moneyListItemAmount, .moneyListItemNumber {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
 }
