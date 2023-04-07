@@ -17,11 +17,16 @@
 :root {
 
   --red-color: hsl(349, 98%, 58%);
-  --blue-color: hsl(192, 98%, 47%);
+  --blue-color: hsl(211, 87%, 15%);
   --dark-color: hsl(0, 0%, 13%);
   --white-color: hsl(0, 0%, 100%);
-  --transition: all 400ms ease;
-  --bg-color: hsl(218, 29%, 95%);
-  --shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+  --bg-color: linear-gradient(to bottom, hsl(211, 98%, 19%), hsl(206, 100%, 21%));
 
+}
+
+body {
+  background-image: linear-gradient(to bottom, hsla(211, 98%, 19%, 0.623), hsl(206, 100%, 21%)), url('./assets/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

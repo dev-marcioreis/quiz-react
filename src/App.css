@@ -1,5 +1,35 @@
-/*==========Base==========*/
-body {
-  color: var(--dark-color);
+.app {
+    height: 100vh;
+    display: flex;
+    color: var(--white-color);
 }
-
+.main {
+    width: 65%;
+}
+.pyramid {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+}
+.moneyList {
+    width: 100%;
+    padding: 1.2rem;
+}
+.moneyListItem {
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+    border-radius: .3rem;
+}
+.moneyListItem.active {
+    background: var(--blue-color);
+}
+.moneyListItemNumber {
+    width: 50%;
+}
+.moneyListItemAmount, .moneyListItemNumber {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
