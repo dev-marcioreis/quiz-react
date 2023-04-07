@@ -54,7 +54,7 @@
     border-radius: .3rem;
 }
 .moneyListItem.active {
-    background: var(--blue-color);
+    background: var(--bg-color);
 }
 .moneyListItemNumber {
     width: 30%;
