@@ -18,9 +18,11 @@
 
   --red-color: hsl(349, 98%, 58%);
   --blue-color: hsl(211, 87%, 15%);
+  --blue1-color: hsla(211, 87%, 15%, 0.541);
   --dark-color: hsl(0, 0%, 13%);
   --white-color: hsl(0, 0%, 100%);
   --bg-color: linear-gradient(to bottom, hsl(211, 98%, 19%), hsl(206, 100%, 21%));
+  --green-color: hsl(157, 56%, 32%); 
 
 }
 

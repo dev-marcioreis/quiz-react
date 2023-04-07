@@ -7,7 +7,7 @@
     width: 75%;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.192) 50%, hsl(206, 100%, 21%)), url('./assets/bg.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.192) 40%, hsl(206, 100%, 21%)), url('./assets/bg.jpg');
     filter: brightness(1.5) contrast(1.4);
     background-position: center;
     background-repeat: no-repeat;
@@ -16,18 +16,20 @@
 .top {
     position: relative;
     height: 50%;
-}
-.timer {
-    position: absolute;
-    left: 5rem;
-    bottom: .9rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+}
+.timer {
+    position: absolute;
+    top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background: var(--blue-color);
+    background: var(--blue1-color);
     border: 5px solid var(--white-color);
     font-size: 2rem;
     font-weight: 700;
@@ -35,12 +37,16 @@
 }
 .bottom {
     height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .pyramid {
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;  
+    background: var(--blue1-color);
 }
 .moneyList {
     width: 100%;
