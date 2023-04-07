@@ -68,3 +68,42 @@
     font-size: 1.2rem;
     font-weight: 300;
 }
+
+
+/*==========Media Query small screens==========*/
+@media (max-width: 1024px) {
+    .main {
+        width: 65%;
+    }
+    .timer {
+        top: 10rem;
+    }
+    .pyramid {
+        width: 35%;
+    }
+    .moneyListItemNumber {
+        width: 40%;
+    }
+    .moneyListItemAmount, .moneyListItemNumber {
+        font-size: 1rem;
+    }
+
+}
+
+
+/*==========Media Query small screens mobile==========*/
+@media (max-width: 768px) {
+    .main {
+        width: 55%;
+    }
+    .pyramid {
+        width: 45%;
+    }
+    .moneyListItemNumber {
+        width: 20%;
+    }
+    .moneyListItemAmount, .moneyListItemNumber {
+        font-size: .8rem;
+    }
+
+}

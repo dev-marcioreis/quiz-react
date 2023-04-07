@@ -53,3 +53,32 @@
         background: var(--green-color);
     }
 }
+
+
+/*==========Media Query small screens==========*/
+@media (max-width: 1024px) {
+    .question {
+        font-size: 1.1rem;
+    }
+    .answer {
+        padding: .5rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/*==========Media Query small screens mobile==========*/
+@media (max-width: 768px) {
+    .question {
+        width: 90%;
+        font-size: .8rem;
+        padding: .3rem;
+    }
+    .answer {
+        width: 90%;
+        padding: .3rem;
+        font-size: .8rem;
+    }
+
+}
