@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import './App.css'
+import Timer from './components/Timer';
 import Trivia from './components/Trivia';
 import data from './data'
 
@@ -39,7 +40,7 @@ function App() {
         {stop ? <h1 className='value'>Você Ganhou: {earned}</h1> : (
           <>
             <div className="top">
-              <div className="timer">30</div>
+              <div className="timer"><Timer setStop={setStop} questionNumber={questionNumber} /></div>
             </div>
             <div className="bottom">
               <Trivia data={data} setStop={setStop} questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
