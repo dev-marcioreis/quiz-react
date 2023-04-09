@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const Timer = ( {setStop, questionNumber} ) => {
 
-    const [timer, setTimer] = useState(30)
+    const [timer, setTimer] = useState(20)
 
     useEffect(() => {
 
@@ -21,7 +21,7 @@ const Timer = ( {setStop, questionNumber} ) => {
     }, [setStop, timer])
 
     useEffect(() => {
-        setTimer(30)
+        setTimer(20)
     }, [questionNumber])
 
   return (

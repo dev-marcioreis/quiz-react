@@ -3,6 +3,7 @@ import './App.css'
 import Timer from './components/Timer';
 import Trivia from './components/Trivia';
 import data from './data'
+import Start from './components/Start';
 
 function App() {
 
@@ -37,30 +38,37 @@ function App() {
 
   return (
     <div className="app">
-      <div className="main">
-        {stop ? <h1 className='value'>Você Ganhou: {earned}</h1> : (
+      {
+        username ? (
           <>
-            <div className="top">
-              <div className="timer"><Timer setStop={setStop} questionNumber={questionNumber} /></div>
+            <div className="main">
+              {stop ? <h1 className='value'>Você Ganhou: {earned}</h1> : (
+                <>
+                  <div className="top">
+                    <div className="timer"><Timer setStop={setStop} questionNumber={questionNumber} /></div>
+                  </div>
+                  <div className="bottom">
+                    <Trivia data={data} setStop={setStop} questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
+                  </div>
+                </>
+              )}
             </div>
-            <div className="bottom">
-              <Trivia data={data} setStop={setStop} questionNumber={questionNumber} setQuestionNumber={setQuestionNumber} />
+            <div className="pyramid">
+              <ul className="moneyList">
+                {
+                  moneyPyramid.map(item => (
+                    <li className={questionNumber === item.id ? 'moneyListItem active' : 'moneyListItem'}>
+                      <span className='moneyListItemNumber'>{item.id}</span>
+                      <span className='moneyListItemAmount'>{item.amount}</span>
+                    </li>
+                  ))
+                }
+              </ul>
             </div>
           </>
-        )}
-      </div>
-      <div className="pyramid">
-        <ul className="moneyList">
-          {
-            moneyPyramid.map(item => (
-              <li className={questionNumber === item.id ? 'moneyListItem active' : 'moneyListItem'}>
-                <span className='moneyListItemNumber'>{item.id}</span>
-                <span className='moneyListItemAmount'>{item.amount}</span>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
+        ) : ( <Start setUsername={setUsername} />
+        )
+      }
     </div>
   )
 }
