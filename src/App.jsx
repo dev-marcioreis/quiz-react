@@ -42,7 +42,10 @@ function App() {
         username ? (
           <>
             <div className="main">
-              {stop ? <h1 className='value'>Você Ganhou: {earned}</h1> : (
+              {stop ? <div className='value'>
+                  <h1>Você Ganhou: {earned}</h1>
+                  <button className='reloadBtn' onClick={() => window.location.reload()}>Reiniciar</button>
+                </div> : (
                 <>
                   <div className="top">
                     <div className="timer"><Timer setStop={setStop} questionNumber={questionNumber} /></div>

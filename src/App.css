@@ -19,8 +19,19 @@
     width: 80%;
     border-radius: .5rem;
     background: var(--blue-color);
+}
+.value h1 {
     font-size: 2.5rem;
     font-weight: 400;
+}
+.value .reloadBtn {
+    padding: .1rem .5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background: var(--green-color);
+    color: var(--white-color);
 }
 .top {
     position: relative;
@@ -86,8 +97,13 @@
         width: 65%;
     }
     .value {
-        width: 90%;
+        width: 95%;
+    }
+    .value h1 {
         font-size: 1.7rem;
+    }
+    .value .reloadBtn {
+        font-size: 1.2rem;
     }
     .timer {
         top: 10rem;
@@ -110,8 +126,12 @@
     .main {
         width: 60%;
     }
-    .value {
-        font-size: 1.3rem;
+    .value h1 {
+        font-size: 1.4rem;
+    }
+    .value .reloadBtn {
+        margin-block-start: .5rem;
+        font-size: .9rem;
     }
     .top {
         height: 36%;
