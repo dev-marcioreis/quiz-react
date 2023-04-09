@@ -32,6 +32,7 @@
     letter-spacing: 2px;
     background: var(--green-color);
     color: var(--white-color);
+    cursor: pointer;
 }
 .top {
     position: relative;
