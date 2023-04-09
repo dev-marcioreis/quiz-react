@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const Timer = ( {setStop, questionNumber} ) => {
 
-    const [timer, setTimer] = useState(20)
+    const [timer, setTimer] = useState(30)
 
     useEffect(() => {
 
@@ -15,13 +15,13 @@ const Timer = ( {setStop, questionNumber} ) => {
         const interval = setInterval(() => {
             setTimer(prev => prev - 1)
         }, 1000)
-        
+
         return () => clearInterval(interval)
 
     }, [setStop, timer])
 
     useEffect(() => {
-        setTimer(20)
+        setTimer(30)
     }, [questionNumber])
 
   return (

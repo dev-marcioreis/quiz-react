@@ -6,6 +6,7 @@ import data from './data'
 
 function App() {
 
+  const [username, setUsername] = useState(null)
   const [questionNumber, setQuestionNumber] = useState(1)
   const [stop, setStop] = useState(false)
   const [earned, setEarned] = useState('R$ 0')
