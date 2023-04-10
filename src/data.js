@@ -45,7 +45,7 @@ const data = [
     },
     {
         id: 3,
-        question: 'Quantos lado tem uma bola?',
+        question: 'Quantos lados tem uma bola?',
         answers: [
             {
                 name: '2 Lados',
