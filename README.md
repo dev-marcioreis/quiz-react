@@ -6,7 +6,7 @@ Este projeto é um quiz de perguntas e respostas baseado no show do milhão do S
 
 ## 🚀 99% Finalizado.
 
-## 📋 Técnologias
+## 📋 Tecnologias
 React + useState + useEffect + use-Sound
 
 ## ✒️ Autor
